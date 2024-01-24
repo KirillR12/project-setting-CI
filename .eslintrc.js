@@ -3,7 +3,12 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    extends: ['airbnb', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
+    extends: [
+        'airbnb',
+        'plugin:react/recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:i18next/recommended',
+        'plugin:storybook/recommended'],
     overrides: [
         {
             env: {
@@ -11,9 +16,13 @@ module.exports = {
             },
             files: [
                 '.eslintrc.{js,cjs}',
+                '**/src/**/*.test.{ts,tsx}',
             ],
             parserOptions: {
                 sourceType: 'script',
+            },
+            rules: {
+                'i18next/no-literal-string': 'off',
             },
         },
     ],

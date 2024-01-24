@@ -1,4 +1,3 @@
-
 import webpack from 'webpack'
 import { BuildOptions } from './types/config'
 import { cssLoader } from './loaders/cssLoader'

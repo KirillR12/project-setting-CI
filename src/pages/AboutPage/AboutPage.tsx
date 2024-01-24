@@ -11,7 +11,7 @@ const AboutPage = () => {
     return (
         <div className={styles.AboutPage}>
             {t('About')}
-            <button type="button" onClick={toggle}>Click</button>
+            <button type="button" onClick={toggle}>{t('Click')}</button>
         </div>
     )
 }
