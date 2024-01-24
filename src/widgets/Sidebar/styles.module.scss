@@ -1,0 +1,20 @@
+.Sidebar {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 80px;
+    height: calc(100vh - var(--navbar-height));
+
+    background-color: var(--inverted-primary-color);
+
+    transition: 0.3s;
+}
+
+.collapsedStyles {
+    width: 300px;
+}
+
+.links {
+position: absolute;
+bottom: 20px;
+}

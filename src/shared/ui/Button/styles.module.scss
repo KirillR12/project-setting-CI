@@ -1,0 +1,19 @@
+.Button {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    border: none;
+
+ color: red;
+
+    background: none;
+}
+
+.outline { 
+    padding: 10px;
+border: 1px solid var(--primary-color);
+
+color: var(--primary-color)
+}
