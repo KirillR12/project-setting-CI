@@ -6,12 +6,11 @@ on:
       branches: [ master ]
 
 jobs:
-pepiline: 
-runs-on: ubuntu-latest
-
- strategy:
-      matrix:
-        node_version: [ 17.x ]
+    pepiline: 
+        runs-on: ubuntu-latest
+        strategy:
+           matrix:
+             node_version: [ 17.x ]
 
  steps:
         uses: actions/checkout@v2
